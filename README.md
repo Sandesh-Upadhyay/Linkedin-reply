@@ -1,15 +1,42 @@
-# Linkedin-reply
+# LinkedIn Reply Extension
 
-This project is an AI-powered LinkedIn reply generator, aimed at assisting users in crafting quick, relevant responses to LinkedIn messages. It leverages AI to analyze incoming messages and suggest contextually appropriate replies.
+## Description
+
+The LinkedIn Reply Extension is an AI-powered tool designed to help users generate quick and relevant replies to LinkedIn messages. By analyzing incoming messages, the extension provides contextually appropriate suggestions, saving users time and enhancing their communication efficiency.
+
+## Video Demo
+
+[![Watch the video](https://img.youtube.com/vi/CvUCMlF3rz8/maxresdefault.jpg)](https://www.youtube.com/watch?v=CvUCMlF3rz8)
+
+*Click the image above to watch a demonstration of the AI-powered LinkedIn Reply Extension in action.*
+
+*The demo showcases the following tasks:*
+
+1. Open a LinkedIn message conversation.
+2. Click the edit icon that appears in the message box.
+3. Enter your prompt in the modal.
+4. Click "Generate" to receive AI-suggested replies.
+5. Use "Regenerate" for alternative suggestions.
+6. Click "Insert" to add the selected message to your LinkedIn conversation.
 
 ## Features
-- **AI-powered message replies**: Generate responses based on LinkedIn messages.
-- **Customizable templates**: Tailor responses to specific job titles or message types.
-- **Time-saving**: Fast, intelligent replies with minimal effort.
+
+- **AI-Powered Replies**: Quickly generates contextual message suggestions for LinkedIn conversations.
+- **Customizable Templates**: Allows tailoring responses to specific job titles or message types.
+- **Time-Saving**: Provides fast, intelligent replies with minimal effort.
+
+## Tech Stack
+
+- **WXT**: Web Extension Framework for streamlined extension development.
+- **React**: Used for building responsive user interface components.
+- **TypeScript**: Ensures type-safe JavaScript development.
+- **Tailwind CSS**: For styling the extension UI.
 
 ## Installation
 
-1. Clone the repository:
+Follow these steps to get the project up and running on your local machine:
+
+1. Clone this repository:
     ```bash
     git clone https://github.com/Sandesh-Upadhyay/Linkedin-reply.git
     ```
@@ -24,38 +51,25 @@ This project is an AI-powered LinkedIn reply generator, aimed at assisting users
     npm install
     ```
 
+4. Run the project:
+    ```bash
+    npm run dev  # for development mode
+    npm run build  # for production build
+    ```
+
 ## Usage
 
-1. Run the project:
-    ```bash
-    npm start
-    ```
+1. Open a LinkedIn message conversation.
+2. Click the edit icon that appears in the message box.
+3. Enter your prompt in the modal.
+4. Click "Generate" to receive AI-suggested replies.
+5. Use "Regenerate" for alternative suggestions.
+6. Click "Insert" to add the selected message to your LinkedIn conversation.
 
-2. Follow the on-screen instructions to input your LinkedIn messages.
+## Development
 
-3. Receive AI-generated reply suggestions.
-
-## Contributing
-
-If you'd like to contribute to this project, please fork the repository and use a feature branch. Pull requests are warmly welcome.
-
-1. Fork the repository.
-2. Create your feature branch:
-    ```bash
-    git checkout -b feature/YourFeature
-    ```
-
-3. Commit your changes:
-    ```bash
-    git commit -am 'Add YourFeature'
-    ```
-
-4. Push to the branch:
-    ```bash
-    git push origin feature/YourFeature
-    ```
-
-5. Open a pull request.
+- **`content.ts`**: The main content script injecting functionality into LinkedIn pages. A mix of Tailwind CSS and inline CSS is used due to compatibility issues and cross-origin policy.
+- **React components**: Responsible for the UI, including the modal and message generation interface.
 
 ## License
 
